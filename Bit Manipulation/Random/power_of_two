@@ -1,0 +1,49 @@
+//It checks whether the number is in the power of two or not
+
+/**
+ *
+ * @author madhvi
+ */
+import java.util.Scanner;
+public class Test1 {
+    
+    public static void main(String[] args) {
+
+	        int b=0,a,counter=0;
+        Scanner sc=new Scanner(System.in);
+    a=sc.nextInt();
+          if (a%2==0)
+         {
+                while(a!=1) {
+                    if(a%2==0){
+                  a=a/2;
+                  counter+=1;
+                  
+                  }
+                    else{
+                        counter=-999;
+                    break;
+                    }
+                  
+              }
+                    if(counter>=1)
+                    {
+                    System.out.println("power of two");
+                    }
+                     else{
+                            System.out.println("not in power of two");
+                    }
+        
+
+
+}
+
+else{
+System.out.println("not in power of two");
+
+}
+    
+    
+    
+    }
+}
